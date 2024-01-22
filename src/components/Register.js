@@ -93,7 +93,7 @@ const Register = () => {
       e.preventDefault();
 
       if (validateForm()) {
-        const { data } = await axios.post("/api/user/register", formData);
+        const { data } = await axios.post("http://3.25.58.228:8000/api/user/register", formData);
         setMessage("Data Submit Successfully");
       } else {
         setMessage("");
